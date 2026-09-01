@@ -1,0 +1,8 @@
+{
+  "name": "Lead Enrichment -> CRM Sync",
+  "nodes": [
+    { "type": "webhook", "name": "Inbound Signal" },
+    { "type": "httpRequest", "name": "Call /api/v1/enrich" },
+    { "type": "salesforce", "name": "Upsert Lead" }
+  ]
+}
