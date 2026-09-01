@@ -43,3 +43,13 @@ PYTHONPATH=. .venv/bin/python3 -m uvicorn core.api.webhook:app --reload
 # Run test suite
 PYTHONPATH=. .venv/bin/python3 -m pytest tests/ -v
 ```
+
+## GTM Stack Coverage (added for Alloy GTM Engineer alignment)
+
+| Folder | Description |
+|---|---|
+| `core/integrations/salesforce/` | Salesforce CRM sync client (Lead/Contact/Opportunity upsert). |
+| `core/integrations/ipaas/` | n8n and Zapier workflow definitions for enrichment-to-CRM automation. |
+| `modules/sql-analytics/` | SQL models feeding BI reporting (Looker/Tableau-ready). |
+| `modules/sales-engagement/` | Outreach/Salesloft/Gong sync stubs. |
+| `modules/customer-success/` | Gainsight/ChurnZero sync stubs. |
